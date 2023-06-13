@@ -1,7 +1,7 @@
 {
   "name": "noderevision",
   "version": "1.0.0",
-  "main": "hello.js",
+  "main": "10thJune.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
