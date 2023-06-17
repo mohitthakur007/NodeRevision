@@ -3,6 +3,13 @@
  * During this time the thread should not be able to do anything else.
  */
 
-function sleep (seconds) {
+function sleep(ms) {
+    var startTime = Date.now();
+    while(Date.now()-startTime <ms){
+
+    }
 
 }
+console.log("start")
+sleep(5000)
+console.log("end");

@@ -9,7 +9,18 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+    const hashmap = {};
+    for (var tran in transactions) {
+        if (transactions[tran].category in hashmap)
+            hashmap[transactions[tran].category] += transactions[tran].price;
+        else
+            hashmap[transactions[tran].category] = transactions[tran].price;
+    }
+    const ans = [];
+    for (var key in hashmap) {
+        ans.push({"category": key, "totalSpent": hashmap[key]});
+    }
+    return ans;
 }
 
 module.exports = calculateTotalSpentByCategory;
